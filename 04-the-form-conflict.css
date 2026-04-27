@@ -1,0 +1,95 @@
+/* =========================
+   1. ELEMENT SELECTORS (LOW PRIORITY)
+   ========================= */
+
+body {
+  font-family: Arial;
+  background-color: #f4f4f4;
+}
+
+h2 {
+  text-align: center;
+  color: black;
+}
+
+/* label element */
+label {
+  font-weight: bold;
+  color: blue;
+}
+
+/* input element */
+input {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* button element */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+/* =========================
+   2. CLASS SELECTORS (MEDIUM PRIORITY)
+   ========================= */
+
+.container {
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+}
+
+/* overrides label element */
+.label {
+  color: green;
+}
+
+/* overrides input element */
+.input-field {
+  border: 2px solid orange;
+}
+
+/* overrides button element */
+.btn {
+  background-color: #28a745;
+}
+
+/* hover still works */
+.btn:hover {
+  background-color: #218838;
+  cursor: pointer;
+  color: white;
+}
+
+/* =========================
+   3. ID SELECTORS (HIGHEST PRIORITY)
+   ========================= */
+
+#main-title {
+  color: red;
+}
+
+/* THIS WILL OVERRIDE .container */
+#main-container {
+  border: 3px solid black;
+}
+
+/* overrides .btn and button */
+#submit-btn {
+  color: purple;
+}
+
+/* hover still works */
+.btn:hover {
+  background-color: #f4f4f4;
+}

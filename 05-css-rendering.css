@@ -1,0 +1,46 @@
+/* =========================
+   4. LAYERING (BACKGROUND / FOREGROUND)
+   ========================= */
+
+/* BACKGROUND LAYER */
+body {
+  background-color: #f4f4f4;
+  position: relative;
+}
+
+/* BACKGROUND DECOR OBJECT */
+.bg-shape {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+  border-radius: 50%;
+
+  z-index: 0;
+}
+
+.container {
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+
+  position: relative;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  background: red;
+  color: white;
+  padding: 10px;
+
+  z-index: 2;
+}
+

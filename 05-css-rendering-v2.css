@@ -1,0 +1,70 @@
+/* =========================
+   SCENE WRAPPER (KEY FIX)
+   ========================= */
+
+.scene {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #f4f4f4;
+}
+
+/* =========================
+   BACKGROUND SHAPE
+   ========================= */
+
+.bg-shape {
+  position: absolute;
+
+  top: 20%;
+  left: 35%;
+
+  width: 200px;
+  height: 200px;
+
+  background-color: lightblue;
+  border-radius: 50%;
+
+  z-index: 0;
+  opacity: 0.6;
+}
+
+/* =========================
+   MAIN CONTAINER (MIDDLE LAYER)
+   ========================= */
+
+.container {
+  top: -20%;
+  width: 300px;
+  padding: 20px;
+
+  background: white;
+  border-radius: 10px;
+
+  position: relative;
+  z-index: 1;
+}
+
+/* =========================
+   OVERLAY (TOP LAYER)
+   ========================= */
+
+.overlay {
+  position: absolute;
+
+  top: 25%;
+  right: 40%;
+
+  background: red;
+  color: white;
+
+  padding: 10px;
+  border-radius: 5px;
+
+  z-index: 2;
+}
