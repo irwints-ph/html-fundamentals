@@ -163,7 +163,7 @@ Understand structured data handling
 * DOM selection
 * events
 * form submit handling
-* event.preventDefault()
+* [event.preventDefault()](06-preventDefault.md#-simple-definition)
 
 ## 💻 Practice
 

@@ -27,8 +27,8 @@ When you click submit:
 
 ```txt id="flow1"
 1. Collect form data
-2. Attach it to URL (GET method)
-3. OR send request (POST method)
+2. Attach it to URL (GET method) -> URL Address/End Point
+3. OR send request (POST method) -> Body of request
 4. Reload page / navigate to action URL
 ```
 

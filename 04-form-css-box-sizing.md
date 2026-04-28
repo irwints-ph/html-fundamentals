@@ -1,4 +1,4 @@
-Good question—this is a classic CSS layout issue, and it usually comes down to **how width + padding + borders are calculated**.
+**how width + padding + borders are calculated**.
 
 ---
 
@@ -106,10 +106,4 @@ For all your projects going forward, always include:
 
 It saves you from 90% of sizing headaches in CSS layouts.
 
----
-
-If you want, I can next show you:
-
-* a visual diagram of how box model works
-* or common CSS mistakes beginners hit with forms
-* or how to build a perfectly centered form layout (clean UI style)
+[next](04-form-css-box-zing-explain.md)
