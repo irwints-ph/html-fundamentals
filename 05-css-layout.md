@@ -22,9 +22,31 @@ After this module:
 
 ---
 
-# 📦 2. BOX MODEL (FOUNDATION OF ALL CSS LAYOUT)
+# 📦 2. [BOX MODEL](04-form-css-box-zing-explain.md#-1-css-box-model-visual-diagram) (FOUNDATION OF ALL CSS LAYOUT)
 
 Every HTML element is a “box”.
+
+```
+┌──────────────────────────────┐
+│           Margin             │
+│  ┌────────────────────────┐  │
+│  │        Border          │  │
+│  │  ┌──────────────────┐  │  │
+│  │  │    Padding       │  │  │
+│  │  │  ┌────────────┐  │  │  │
+│  │  │  │  Content   │  │  │  │
+│  │  │  └────────────┘  │  │  │
+│  │  └──────────────────┘  │  │
+│  └────────────────────────┘  │
+└──────────────────────────────┘
+```
+
+### 🧠 What each layer means:
+
+* **Content** → text, input value, image, etc.
+* **Padding** → space *inside* the box
+* **Border** → outline around padding
+* **Margin** → space *outside* the box
 
 ## 🧱 Structure of a box:
 

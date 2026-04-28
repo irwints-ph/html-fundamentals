@@ -1,7 +1,3 @@
-Here’s the same form, but styled using **inline CSS** (inside the HTML tags themselves). This is quick for small demos, though not ideal for large projects.
-
----
-
 # 🎨 Example: Form with Inline Styles
 
 ```html id="m1x9zp"

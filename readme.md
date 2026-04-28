@@ -23,13 +23,13 @@ Understand page structure (what exists)
 
 ---
 
-# 🟢 DAY 2 — [FORMS](01-form.md) (DATA INPUT FLOW)
+# 🟢 DAY 2 — [FORMS](01-form.md#-1-form-page-formhtml) (DATA INPUT FLOW)
 
 ## 📘 Topics
 
 * form, input, button
 * labels
-* GET vs POST concept
+* [GET vs POST concept](01-form.md)
 * form submission flow
 
 ## 💻 Practice
@@ -48,7 +48,7 @@ Understand how user data enters a system
 
 ## 📘 Topics
 
-* [inline](02-inline-style.md) vs [internal](03-form-style.html) vs [external CSS](04-form-css.html)
+* [inline](02-inline-style.md#-example-form-with-inline-styles) vs [internal](03-form-style.html) vs [external CSS](04-form-css.html)
 * [Box Sizing](04-form-css-box-sizing.md#-why-your-input-can-exceed-the-form-width)
 * [selectors](04-the-form-css-confilcts.md) (element, class, id)
 * [specificity (priority system)](04-the-form-conflict.css)
@@ -75,7 +75,7 @@ Understand how CSS rules compete and override
 ## 📘 Topics
 
 * [box model](05-css-layout.md#-2-box-model-foundation-of-all-css-layout) (margin, padding, border)
-* display types
+* [display types](05.1-css-display-types.md#-1-block-elements)
 * [flexbox basics](05-css-layout.md#-5-flexbox-modern-layout-system)
 * [centering layouts](05-css-layout.md#-10-flexbox-example-center-form)
 
