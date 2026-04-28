@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Day 8 - DOM + Events + Forms</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: white;
+      padding: 20px;
+      width: 320px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    .output {
+      margin-top: 15px;
+      padding: 10px;
+      background: #e9f7ef;
+      border-left: 4px solid #28a745;
+      font-size: 14px;
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Login Form</h2>
+
+    <form id="loginForm">
+      <input type="text" id="email" placeholder="Enter email" />
+      <input type="password" id="password" placeholder="Enter password" />
+      <button type="submit">Login</button>
+    </form>
+
+    <div class="output" id="output"></div>
+  </div>
+
+  <script>
+    // DOM selection
+    const form = document.getElementById("loginForm");
+    const emailInput = document.getElementById("email");
+    const passwordInput = document.getElementById("password");
+    const output = document.getElementById("output");
+
+    // event handling
+    form.addEventListener("submit", function (event) {
+      event.preventDefault(); // stop page reload
+
+      const email = emailInput.value.trim();
+      const password = passwordInput.value.trim();
+
+      // validation
+      if (!email) {
+        alert("Email is required!");
+        return;
+      }
+
+      if (!password) {
+        alert("Password is required!");
+        return;
+      }
+
+      // display output
+      output.style.display = "block";
+      output.innerHTML = `
+        <strong>Login Data Captured:</strong><br>
+        Email: ${email}<br>
+        Password: ${"*".repeat(password.length)}
+      `;
+
+      // log to console
+      console.log({ email, password });
+    });
+  </script>
+
+</body>
+</html>

@@ -49,9 +49,10 @@ Understand how user data enters a system
 ## 📘 Topics
 
 * [inline](02-inline-style.md) vs [internal](03-form-style.html) vs [external CSS](04-form-css.html)
+* [Box Sizing](04-form-css-box-sizing.md#-why-your-input-can-exceed-the-form-width)
 * [selectors](04-the-form-css-confilcts.md) (element, class, id)
 * [specificity (priority system)](04-the-form-conflict.css)
-* cascade behavior
+* [cascade behavior](04-the-form-conflict.css)
 
 ## 💻 Practice
 
@@ -155,7 +156,7 @@ Understand structured data handling
 
 ---
 
-# 🔴 DAY 8 — DOM + EVENTS + FORMS (BRIDGE DAY)
+# 🔴 DAY 8 — [DOM + EVENTS + FORMS](06-js-dom.md) (BRIDGE DAY)
 
 ## 📘 Topics
 
