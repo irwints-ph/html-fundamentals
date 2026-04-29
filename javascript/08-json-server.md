@@ -196,3 +196,39 @@ After this, the natural progression is:
 
 👉 POST / PUT / DELETE with json-server
 👉 then move to Express (real backend)
+
+# Add (POST)
+```js
+  const API = "http://localhost:3000/users;
+  const name = { "id": 2, "name": "Kid" }
+  fetch(API, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ name })
+  });
+```
+```js
+  const API = "http://localhost:3000/users";
+  const name = { name: "boy", pass: "1" }
+  fetch(API, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(name)
+  })
+  .then(res => {
+    if (!res.ok) {
+      throw new Error("Failed to add user");
+    }
+    return res.json();
+  })  
+  .then((d) =>{
+    console.log(d, "added to db");
+  })
+  .catch(e => {
+    console.error("Error:", e.message);
+  });
+```
