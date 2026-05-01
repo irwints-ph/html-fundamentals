@@ -1,7 +1,3 @@
-Good—this is the right next step because you’re moving from “reading JSON manually” to using a **fake backend API**, which is exactly what tools like `json-server` are for.
-
----
-
 # 📦 1. What is JSON Server?
 
 json-server is a Node module that:

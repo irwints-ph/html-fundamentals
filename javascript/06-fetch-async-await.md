@@ -213,4 +213,3 @@ loadData();
 * API requests
 
 👉 This is already **real backend-level thinking**
-

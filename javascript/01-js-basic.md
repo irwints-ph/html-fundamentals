@@ -105,6 +105,7 @@ const multiply = (a, b) => a * b;
 let fruits = ["apple", "banana", "mango"];
 
 console.log(fruits[0]);
+console.log(fruits.length);
 ```
 
 ### Useful methods
