@@ -75,7 +75,7 @@ async function check_exist_by_id(userId){
 }
 
 async function check_exist_by_username(username){
-  const theEndPoint = `${end_point}/?name=${username}`;
+  const theEndPoint = `${end_point}/?username=${username}`;
   // const theEndPoint = `${end_point}`;
   const res = await fetch(theEndPoint);
   const data = await res.json();
@@ -88,7 +88,7 @@ async function check_exist_by_username(username){
 }
 
 const userId = '1';
-const newName = { name:"Carlo" };
+const newName = { username: "carlo", name:"Carlo", password:"pass", email:"carlo.email.org" };
 await create_user (newName);
 //await update_user(userId, newName);
 // await delete_user(userId);
