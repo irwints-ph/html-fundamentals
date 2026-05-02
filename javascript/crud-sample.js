@@ -2,8 +2,8 @@ const end_point = "http://localhost:3000/users"
 
 // // Create - post
 async function create_user(user){
-  const exist = await check_exist_by_username(user.name);
-  // console.log(exist);
+  const exist = await check_exist_by_username(user.username);
+  console.log(exist);
   if(exist){
     console.log(`User ${user.name} already exist`);
   }
@@ -94,6 +94,9 @@ await create_user (newName);
 // await delete_user(userId);
 await read_users();
 
+// // await check_exist_by_username(newName.name);
+// const exist = await check_exist_by_username(newName.username);
+// console.log(newName.name,exist);
 
 
 // const people = ["me","you","them"];
